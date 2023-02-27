@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="9" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="20" time="11.797907">
+    <testcase classname="Zeb Users" name="001-Test scenerio to validate positive scenerio for Landline number  with more than 8 digits and less than 30 digits in borrower" time="3.493828">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0123456789" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="001-Test scenerio to validate negative scenerio for Landline number  with less than 8 digits in borrower" time="0.585639">
+        <failure message="java.lang.AssertionError: expected:&lt;422&gt; but was:&lt;201&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message(getUsersStepDefinition.java:61)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower to check for error code and error message(zeb.feature:20)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "012346" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.failed
+
+StackTrace:
+java.lang.AssertionError: expected:<422> but was:<201>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message(getUsersStepDefinition.java:61)
+	at ✽.Then Validate the response code for borrower to check for error code and error message(zeb.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="003-Test scenerio to validate positive scenerio for Landline number  with  30 digits in borrower" time="0.451824">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:29)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "011111111111111111111111111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:29)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="004-Test scenerio to validate negative scenerio for Landline number  with more than 30 digits in borrower" time="0.419784">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0111111111111111111111111111112" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="005-Test scenerio to validate negative scenerio for Landline number with no zero in borrower" time="0.405201">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "11111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="006-Test scenerio to validate negative scenerio for Landline number with two zero starting in borrower" time="0.411325">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0011111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="007-Test scenerio to validate positive scenerio for Landline number with spaces in between the phone numbers in borrower" time="0.424159">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:65)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0111 11 1114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:65)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="008-Test scenerio to validate positive scenerio for Landline number with braces in the phone numbers in borrower" time="0.417967">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:74)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "(0411) 11114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:74)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="009-Test scenerio to validate positive scenerio for Landline number with special charachters in the phone numbers in borrower" time="0.761141">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:83)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "(0411)*11114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:83)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="010-Test scenerio to validate positive scenerio for Mobile number  with more than 8 digits and less than 30 digits in borrower" time="0.478615">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0623456789" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="011-Test scenerio to validate negative scenerio for Mobile number  with less than 8 digits in borrower" time="0.351543">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0623464" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="012-Test scenerio to validate positive scenerio for Mobile number  with  30 digits in borrower" time="0.3911">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:110)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "061111111111111111111111111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:110)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="013-Test scenerio to validate negative scenerio for Mobile number  with more than 30 digits in borrower" time="0.368541">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0611111111111111111111111111112" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="014-Test scenerio to validate negative scenerio for Mobbile number with no zero in borrower" time="0.390791">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "61111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="015-Test scenerio to validate negative scenerio for Mobile number with two zero starting in borrower" time="0.410681">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "00611111111" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="016-Test scenerio to validate positive scenerio for Mobile number with spaces in between the phone numbers in borrower" time="0.403433">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:146)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "0611 11 1114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:146)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="017-Test scenerio to validate positive scenerio for Mobile number with braces in the phone numbers in borrower" time="0.432929">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:155)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "(0611) 11114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:155)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="018-Test scenerio to validate positive scenerio for Mobile number with special charachters in the phone numbers in borrower" time="0.439546">
+        <failure message="java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;422&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:834)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:645)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:631)&#13;&#10;&#9;at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)&#13;&#10;&#9;at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then Validate the response code for borrower(zeb.feature:164)&#13;&#10;">
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "(0411)*11114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<422>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)
+	at stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)
+	at ✽.Then Validate the response code for borrower(zeb.feature:164)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Zeb Users" name="019-Test scenerio to validate negative scenerio for phone number  starting with country code in borrower" time="0.388128">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "+4911114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Zeb Users" name="020-Test scenerio to validate negative scenerio for phone number  starting with a charachter or string in borrower" time="0.371732">
+        <system-out>
+            <![CDATA[Given The USER fetches the bearer token with the given endpoint.............passed
+Given fetch the borrower "/api/v1/questionnaire/{questionnaire_id}/borrower".passed
+And Fetch the payload for the borrower with attributes "Elen" "Engineer" "mr" "dr" "t4911114566" "{questionnaire_id}" "true" "0" and execute the service.passed
+Then Validate the response code for borrower to check for error code and error message.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

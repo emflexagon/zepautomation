@@ -1,0 +1,2791 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3161976500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "001-Test scenerio to validate positive scenerio for Landline number  with more than 8 digits and less than 30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;001-test-scenerio-to-validate-positive-scenerio-for-landline-number--with-more-than-8-digits-and-less-than-30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2755600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328532500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0123456789\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0123456789",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 93
+                },
+                {
+                  "val": "true",
+                  "offset": 114
+                },
+                {
+                  "val": "0",
+                  "offset": 121
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 562900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 7,
+            "name": "@testscenario1"
+          },
+          {
+            "line": 7,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 285078200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "001-Test scenerio to validate negative scenerio for Landline number  with less than 8 digits in borrower",
+        "description": "",
+        "id": "zeb-users;001-test-scenerio-to-validate-negative-scenerio-for-landline-number--with-less-than-8-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 56600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297203400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"012346\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "012346",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 89
+                },
+                {
+                  "val": "true",
+                  "offset": 110
+                },
+                {
+                  "val": "0",
+                  "offset": 117
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3300700,
+              "error_message": "java.lang.AssertionError: expected:\u003c422\u003e but was:\u003c201\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message(getUsersStepDefinition.java:61)\r\n\tat ✽.Then Validate the response code for borrower to check for error code and error message(zeb.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 16,
+            "name": "@testscenario2"
+          },
+          {
+            "line": 16,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 253316300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "003-Test scenerio to validate positive scenerio for Landline number  with  30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;003-test-scenerio-to-validate-positive-scenerio-for-landline-number--with--30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197233600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"011111111111111111111111111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "011111111111111111111111111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 113
+                },
+                {
+                  "val": "true",
+                  "offset": 134
+                },
+                {
+                  "val": "0",
+                  "offset": 141
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1224100,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:29)\r\n",
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 25,
+            "name": "@testscenario3"
+          },
+          {
+            "line": 25,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 235266000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "004-Test scenerio to validate negative scenerio for Landline number  with more than 30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;004-test-scenerio-to-validate-negative-scenerio-for-landline-number--with-more-than-30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184314100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0111111111111111111111111111112\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0111111111111111111111111111112",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 114
+                },
+                {
+                  "val": "true",
+                  "offset": 135
+                },
+                {
+                  "val": "0",
+                  "offset": 142
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 34,
+            "name": "@testscenario4"
+          },
+          {
+            "line": 34,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 225253200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "005-Test scenerio to validate negative scenerio for Landline number with no zero in borrower",
+        "description": "",
+        "id": "zeb-users;005-test-scenerio-to-validate-negative-scenerio-for-landline-number-with-no-zero-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179527200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"11111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "11111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 91
+                },
+                {
+                  "val": "true",
+                  "offset": 112
+                },
+                {
+                  "val": "0",
+                  "offset": 119
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 381400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 43,
+            "name": "@testscenario5"
+          },
+          {
+            "line": 43,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 250123500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "006-Test scenerio to validate negative scenerio for Landline number with two zero starting in borrower",
+        "description": "",
+        "id": "zeb-users;006-test-scenerio-to-validate-negative-scenerio-for-landline-number-with-two-zero-starting-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76500,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160977600,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0011111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0011111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 93
+                },
+                {
+                  "val": "true",
+                  "offset": 114
+                },
+                {
+                  "val": "0",
+                  "offset": 121
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147600,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 52,
+            "name": "@testscenario6"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 52,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 227731900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 68,
+        "name": "007-Test scenerio to validate positive scenerio for Landline number with spaces in between the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;007-test-scenerio-to-validate-positive-scenerio-for-landline-number-with-spaces-in-between-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50600,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 196037900,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0111 11 1114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0111 11 1114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338800,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:65)\r\n",
+              "status": "failed"
+            },
+            "line": 65,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 61,
+            "name": "@testscenario7"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 61,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 239254900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "008-Test scenerio to validate positive scenerio for Landline number with braces in the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;008-test-scenerio-to-validate-positive-scenerio-for-landline-number-with-braces-in-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69100,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177848700,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"(0411) 11114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "(0411) 11114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 794400,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:74)\r\n",
+              "status": "failed"
+            },
+            "line": 74,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 70,
+            "name": "@testscenario8"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 70,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 207570600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 86,
+        "name": "009-Test scenerio to validate positive scenerio for Landline number with special charachters in the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;009-test-scenerio-to-validate-positive-scenerio-for-landline-number-with-special-charachters-in-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 52100,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 552017900,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"(0411)*11114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "(0411)*11114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1500500,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:83)\r\n",
+              "status": "failed"
+            },
+            "line": 83,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 79,
+            "name": "@testscenario9"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 79,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 215807100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "010-Test scenerio to validate positive scenerio for Mobile number  with more than 8 digits and less than 30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;010-test-scenerio-to-validate-positive-scenerio-for-mobile-number--with-more-than-8-digits-and-less-than-30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 51700,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 262636500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0623456789\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0623456789",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 93
+                },
+                {
+                  "val": "true",
+                  "offset": 114
+                },
+                {
+                  "val": "0",
+                  "offset": 121
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119800,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 88,
+            "name": "@testscenario10"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 88,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 189491100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 104,
+        "name": "011-Test scenerio to validate negative scenerio for Mobile number  with less than 8 digits in borrower",
+        "description": "",
+        "id": "zeb-users;011-test-scenerio-to-validate-negative-scenerio-for-mobile-number--with-less-than-8-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48300,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161735900,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0623464\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0623464",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 90
+                },
+                {
+                  "val": "true",
+                  "offset": 111
+                },
+                {
+                  "val": "0",
+                  "offset": 118
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 267600,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 97,
+            "name": "@testscenario11"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 97,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 235570200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 113,
+        "name": "012-Test scenerio to validate positive scenerio for Mobile number  with  30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;012-test-scenerio-to-validate-positive-scenerio-for-mobile-number--with--30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 75800,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154973900,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"061111111111111111111111111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "061111111111111111111111111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 113
+                },
+                {
+                  "val": "true",
+                  "offset": 134
+                },
+                {
+                  "val": "0",
+                  "offset": 141
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 479800,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:110)\r\n",
+              "status": "failed"
+            },
+            "line": 110,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 106,
+            "name": "@testscenario12"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 106,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 214805900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 122,
+        "name": "013-Test scenerio to validate negative scenerio for Mobile number  with more than 30 digits in borrower",
+        "description": "",
+        "id": "zeb-users;013-test-scenerio-to-validate-negative-scenerio-for-mobile-number--with-more-than-30-digits-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 60200,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153539000,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0611111111111111111111111111112\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0611111111111111111111111111112",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 114
+                },
+                {
+                  "val": "true",
+                  "offset": 135
+                },
+                {
+                  "val": "0",
+                  "offset": 142
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135800,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 115,
+            "name": "@testscenario13"
+          },
+          {
+            "line": 115,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 237067900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 131,
+        "name": "014-Test scenerio to validate negative scenerio for Mobbile number with no zero in borrower",
+        "description": "",
+        "id": "zeb-users;014-test-scenerio-to-validate-negative-scenerio-for-mobbile-number-with-no-zero-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 67900,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153495400,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"61111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "61111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 91
+                },
+                {
+                  "val": "true",
+                  "offset": 112
+                },
+                {
+                  "val": "0",
+                  "offset": 119
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159600,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 124,
+            "name": "@testscenario14"
+          },
+          {
+            "line": 124,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 255312600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 140,
+        "name": "015-Test scenerio to validate negative scenerio for Mobile number with two zero starting in borrower",
+        "description": "",
+        "id": "zeb-users;015-test-scenerio-to-validate-negative-scenerio-for-mobile-number-with-two-zero-starting-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 59200,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155052800,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"00611111111\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "00611111111",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 94
+                },
+                {
+                  "val": "true",
+                  "offset": 115
+                },
+                {
+                  "val": "0",
+                  "offset": 122
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 255900,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 133,
+            "name": "@testscenario15"
+          },
+          {
+            "line": 133,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 230788100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 149,
+        "name": "016-Test scenerio to validate positive scenerio for Mobile number with spaces in between the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;016-test-scenerio-to-validate-positive-scenerio-for-mobile-number-with-spaces-in-between-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 447000,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171922200,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"0611 11 1114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "0611 11 1114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 275900,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:146)\r\n",
+              "status": "failed"
+            },
+            "line": 146,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 142,
+            "name": "@testscenario16"
+          },
+          {
+            "line": 142,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 256046800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 158,
+        "name": "017-Test scenerio to validate positive scenerio for Mobile number with braces in the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;017-test-scenerio-to-validate-positive-scenerio-for-mobile-number-with-braces-in-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 135300,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 176474500,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"(0611) 11114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "(0611) 11114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272700,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:155)\r\n",
+              "status": "failed"
+            },
+            "line": 155,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 151,
+            "name": "@testscenario17"
+          },
+          {
+            "line": 151,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 244207000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 167,
+        "name": "018-Test scenerio to validate positive scenerio for Mobile number with special charachters in the phone numbers in borrower",
+        "description": "",
+        "id": "zeb-users;018-test-scenerio-to-validate-positive-scenerio-for-mobile-number-with-special-charachters-in-the-phone-numbers-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 59500,
+              "status": "passed"
+            },
+            "line": 162,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 194938000,
+              "status": "passed"
+            },
+            "line": 163,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"(0411)*11114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "(0411)*11114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 98
+                },
+                {
+                  "val": "true",
+                  "offset": 119
+                },
+                {
+                  "val": "0",
+                  "offset": 126
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 341700,
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c422\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat common.methods.CommonMethods.responseStatusCodeValidation(CommonMethods.java:57)\r\n\tat stepDefenition.getUsersStepDefinition.validate_the_response_code_for_borrower(getUsersStepDefinition.java:54)\r\n\tat ✽.Then Validate the response code for borrower(zeb.feature:164)\r\n",
+              "status": "failed"
+            },
+            "line": 164,
+            "name": "Validate the response code for borrower",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 160,
+            "name": "@testscenario18"
+          },
+          {
+            "line": 160,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 223183300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 176,
+        "name": "019-Test scenerio to validate negative scenerio for phone number  starting with country code in borrower",
+        "description": "",
+        "id": "zeb-users;019-test-scenerio-to-validate-negative-scenerio-for-phone-number--starting-with-country-code-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53000,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164779400,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"+4911114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "+4911114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 94
+                },
+                {
+                  "val": "true",
+                  "offset": 115
+                },
+                {
+                  "val": "0",
+                  "offset": 122
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111800,
+              "status": "passed"
+            },
+            "line": 173,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 169,
+            "name": "@testscenario19"
+          },
+          {
+            "line": 169,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "The USER fetches the bearer token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 214866400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The USER fetches the bearer token with the given endpoint",
+            "match": {
+              "location": "getUsersStepDefinition.The_USER_fetches_the_bearer_token_with_the_given_endpoint()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 185,
+        "name": "020-Test scenerio to validate negative scenerio for phone number  starting with a charachter or string in borrower",
+        "description": "",
+        "id": "zeb-users;020-test-scenerio-to-validate-negative-scenerio-for-phone-number--starting-with-a-charachter-or-string-in-borrower;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 32400,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "fetch the borrower \"/api/v1/questionnaire/{questionnaire_id}/borrower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/v1/questionnaire/{questionnaire_id}/borrower",
+                  "offset": 20
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_borrower(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156632800,
+              "status": "passed"
+            },
+            "line": 181,
+            "name": "Fetch the payload for the borrower with attributes \"Elen\" \"Engineer\" \"mr\" \"dr\" \"t4911114566\" \"{questionnaire_id}\" \"true\" \"0\" and execute the service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elen",
+                  "offset": 52
+                },
+                {
+                  "val": "Engineer",
+                  "offset": 59
+                },
+                {
+                  "val": "mr",
+                  "offset": 70
+                },
+                {
+                  "val": "dr",
+                  "offset": 75
+                },
+                {
+                  "val": "t4911114566",
+                  "offset": 80
+                },
+                {
+                  "val": "{questionnaire_id}",
+                  "offset": 94
+                },
+                {
+                  "val": "true",
+                  "offset": 115
+                },
+                {
+                  "val": "0",
+                  "offset": 122
+                }
+              ],
+              "location": "getUsersStepDefinition.fetch_the_payload_for_the_borrower_with_attributes_and_execute_the_service(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200100,
+              "status": "passed"
+            },
+            "line": 182,
+            "name": "Validate the response code for borrower to check for error code and error message",
+            "match": {
+              "location": "getUsersStepDefinition.validate_the_response_code_for_borrower_to_check_for_error_code_and_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 178,
+            "name": "@testscenario20"
+          },
+          {
+            "line": 1,
+            "name": "@Tests"
+          },
+          {
+            "line": 178,
+            "name": "@validation_telephone"
+          },
+          {
+            "line": 1,
+            "name": "@executeAllUserScenerios"
+          }
+        ]
+      }
+    ],
+    "name": "Zeb Users",
+    "description": "Zeb dealing with the tokens",
+    "id": "zeb-users",
+    "keyword": "Feature",
+    "uri": "zeb.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@executeAllUserScenerios"
+      },
+      {
+        "line": 1,
+        "name": "@Tests"
+      }
+    ]
+  }
+]
